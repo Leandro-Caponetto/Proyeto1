@@ -14,6 +14,7 @@
 <body>
     <!-- navegador -->
     <header >
+        
         <nav class="nav-nav">
             <div class="nav__img">
                 <a href="#"><img class="logo" src="./img/logo1.png" alt="foto1" ></a>
@@ -23,8 +24,13 @@
                 </div>
                 
             </div>
-            <a href="#"><i class="header__icono fas fa-bars"></i></a>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="menu"><i class="header__icono fas fa-bars"></i></label>
+            
             <div class="nav__menu">
+
+
+                
                
                 <ul class="nav__ul">
                     <li class="nav__item">
@@ -49,13 +55,10 @@
 
             </div> 
        </nav>
+       
     </header> 
-    <div class="search-box">
-        <input type="text" placeholder="search...">
-        <a href="#" class="icon">
-            <i class="fas fa-search"></i>
-        </a>
-    </div>
+    
+    
 <!-- principal -->
     <main class="principal">
         
@@ -63,21 +66,30 @@
             <h1 class="principal__text__al">Alimentos balanceados</h1>
             <h2 class="principal__text__me">¡ LAS MEJORES MARCAS !</h2>
         </div>
+        <div class="secciones">
+            <a href="index.html">INICIO</a> /<a href="./pages/tienda.html"> TIENDA</a> / PRODUCTOS
+        </div>
         <div class="principal__img">
             <img class="foto1" src="./img/foto1.jpg" alt="perros">
             <img class="foto2" src="./img/foto2.jpg" alt="animales">
+            <div class="search-box">
+                <input class="input" type="text" placeholder="search.....">
+                <a href="##" class="icon">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
         </div>
         
         
         <div class="principal__gratis">
-            <p>¡ Envío gratis EN EL DIA en CABA a partir de 3500 pesos !</p>
+            <p>¡ Envíos gratis EN EL DIA en CABA a partir de 3500 pesos !</p>
         </div>
         <div class="principal__btn">
             <div class="principal__comprar">
-                <a href="pages/contacto.html">Ir al Contacto</a>
+                <a href="pages/contacto.html">CONTACTANOS</a>
             </div>
             <div class="principal__tienda">
-                <a href="pages/tienda.html">Ir a la Tienda</a>
+                <a href="pages/tienda.html">IR A LA TIENDA</a>
             </div>
         </div>
         <section class="principal__formas">
@@ -97,7 +109,11 @@
                 </div>
             </div>    
         </section>
+        <div class="whatsapp">
+            <a href="#"><img  src="./img/whatsapp.png" alt="whatapp" width="50"> </a>  
+        </div>    
     </main>
+    
     <!-- footer -->
     <footer>
         <section class="conteiner__tre">
@@ -110,6 +126,8 @@
                 <a class="instagram" href="#"><img src="./img/instagram.png" alt="instagram" width="25"></a></li>
                 <a class="facebook" href="#"><img src="./img/facebook.png" alt="facebook" width="25"></a></li>
             </div>
+            <p >PETSHOP</p>
+            <p>BOYS</p>
         </section>
         
     </footer>
