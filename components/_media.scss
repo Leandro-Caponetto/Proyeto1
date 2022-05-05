@@ -1,0 +1,130 @@
+
+@media screen and (max-width: 1024px) {
+    .principal__text__al {
+        text-transform: uppercase;
+    }
+  
+    .foto1 {
+        display: none;
+    }
+
+    .foto2 {
+        display: block;
+        width: 100%;
+        height: 70%;
+        margin: auto;
+    }
+
+    .principal .principal__btn {
+        grid-template-columns:  1fr;
+        grid-template-rows: 30px 30px; 
+        margin: 50px auto;
+    }
+
+    .principal__pagos {
+        grid-template-columns:  1fr;
+        grid-template-rows: 300px 300px 300px;
+        margin: auto;
+    }
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .catalogo-item button {
+        width: 50%;
+    }
+    .search-box {
+        position: absolute;
+        top: 130%;
+        left: 400%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: row;
+    }
+    .nav {
+        display: none;
+    }
+    .nav__menu {
+        display: none;
+    }
+    .nav-nav .header__icono {
+        display: block;
+        font-size: 32px;
+        
+    }
+    .nav__cont {
+        position: relative;
+        text-align: center;
+
+    }
+    header label .header__icono {
+        display: block;
+    }
+     
+        
+    
+    
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+    .catalogo-item button {
+        width: 50%;
+    }
+    .id-eventos {
+        margin-top: 50px;
+    }
+    .servicio {
+        color: $color3;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: 10px auto;
+        margin-left: 35%;
+        
+
+    }
+    .fotos {
+        color: $color3;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 50px 50px;
+        justify-content: center;
+        margin: 10px auto;
+        margin-left: 35%;
+        
+    }
+ 
+    .gllery__img {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    .gallery__imagen:hover {
+        transform: none;
+    }
+    .gallery__imagen {
+        margin: 12px ;
+    }
+    .id-eventos .logo {
+        width: 30%;
+        display: flex;
+        position: relative;
+        left: 3%;
+        
+    }
+    .icon-wrapper {
+        display: none;
+    }
+
+    .search-box {
+        display: none;
+    
+    }
+    .whatsapp {
+        right: 20px;
+    }
+}

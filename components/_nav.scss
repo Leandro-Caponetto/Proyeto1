@@ -1,0 +1,221 @@
+
+/* Navegador 
+
+*/
+/*boostrap*/
+
+.container-fluid {
+    width: 100%;
+    box-shadow: 1px 20px 20px $color5;
+    border-radius: 15px;
+    -webkit-text-stroke: .9px $color2;
+    border: 1px $color4 solid;
+    
+
+    .navbar-toggler {
+        text-align: center;
+        width: 20%;
+    
+    }
+    .collapse {
+        justify-content: center;
+        
+        & .navbar-nav .nav-item .nav-link {
+            color: $color3;
+            -webkit-text-stroke: .9px $color2;
+        }
+       
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-top: 15px;
+            & .nav-item {
+                margin: 0 15px;
+                text-shadow: 1px 7px 2px $color2;
+            }
+            & .nav-item:hover{
+                transform: scale(1.5);
+            }
+            
+            .nav-item .nav-link {
+                color: $color3;
+                text-decoration:none;
+            }
+        
+        }
+        
+    }
+    
+        
+    
+    
+    .nav-nav .header__icono {
+        display: none;
+    }
+
+    .nav__cont .nav__pet {
+        color: $color1;
+        text-shadow: 1px 6px 4px $color2;
+        -webkit-text-stroke: 1px $color2;
+    }
+    .nav__cont .nav__boys {
+        color: $color3;
+        text-shadow: 1px 6px 2px $color2;
+        -webkit-text-stroke: 1px $color2;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .nav__cont p {
+        margin: 0;
+    }
+        
+    
+
+    .nav__menu ul li {
+        margin: 0 15px;
+        text-shadow: 1px 7px 2px $color2;
+    
+
+    }
+    
+
+    .nav__menu ul li a{
+        color: $color3;
+        text-decoration:none;
+    }
+
+    
+
+
+
+
+    .nav__menu ul :hover {
+        transform: scale(1.5);
+    }
+
+
+
+    .icon-wrapper {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+    .icon-wrapper::after {
+        content: attr(data-number);
+        width: 20px;
+        height: 20px;
+        background-color: $color7;
+        color: $color1;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        opacity: 0;
+        transform: translateY(3px);
+        
+    }
+    .icon-wrapper:hover::after {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity .25s, trasform .25s;
+    }
+    .bell-icon {
+        max-width: 100%;
+    }
+    .icon-wrapper:hover .bell-icon {
+        animation: shake 1s forwards;
+    }
+    @keyframes shake {
+        100% {
+            transform: rotate(15deg);
+        }
+        20% {
+            transform: rotate(-15deg);
+        }
+        30% {
+            transform: rotate(15deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+    }
+    #btn-menu {
+        display:none;
+    }
+    label .header__icono {
+        display: none;
+        font-size: 2rem;
+        padding: 10px;
+        position: relative;
+        top: 20px;
+        left: 370px;
+        color: $color3;
+        text-shadow:  1px 4px 2px $color5;
+        -webkit-text-stroke: .9px $color2;
+        position: absolute;
+    }
+    label .header__icono:hover {
+        cursor: pointer;
+    }
+
+    .search-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $color4;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    .search-box:hover > input {
+        width: 200px;
+        padding: 0 10px;
+    }
+    .search-box:hover > .icon {
+        background: $color9;
+
+    }
+    .icon:hover {
+    transform: rotate(360deg) scale(0.8);
+    }
+    .input{
+        width: 0;
+        border: none;
+        outline: none;
+        padding: 0;
+        background: none;
+        font-size: 1.1rem;
+        transition: 0.5s ease;
+        line-height: 40xp;
+        color: $color1;
+    }
+
+    .icon {
+        color: $color8;
+        float: right;
+        width: 40px;
+        font-size: 1.3rem;
+        height: 40px;
+        border-radius: 50%;
+        background: $color4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+
+}
+
+
+
+
+
