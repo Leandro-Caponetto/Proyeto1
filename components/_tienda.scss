@@ -5,6 +5,31 @@ main {
     padding-top: 12%;
 }
 
+
+.display-1 {
+    text-align: center;
+    font-family: roboto;
+    color: $color10;
+    font-size: 25px;
+    text-shadow: 2px 8px 4px $color2;
+}
+.card-body {
+    text-align: center;
+
+    & .card-title, .card-text, .btn {
+        font-family: roboto;
+    }
+    
+    
+}
+.d-none {
+    text-align: center;
+    & p {
+        font-family: roboto;
+    }
+
+}
+
 .id-eventos {
     
     width: 100%;
@@ -69,12 +94,12 @@ main {
     padding: 10px;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-}    
-    .catalogo-item {
+   
+    &-item {
    
         color: $color3;
         text-align: center;
-        box-shadow: 3px 8px 4px  $color2;
+        box-shadow: 3px 8px 4px  $color13;
         -webkit-text-stroke: 1px $color2;
         padding: 10px;
         margin: 20px 20px;
@@ -83,44 +108,45 @@ main {
     
     
     
-    .catalogo img {
+    & img {
         width: 100%;
         height: auto;
         transition: all 0.3s ease;
     }
     
-    .catalogo img:hover {
+    & img:hover {
         transform: rotate(-5deg);
         filter: blur(2px);
     }
     
-    .catalogo .catalogo-tex {
+    & &-tex {
         font-family: 'Times New Roman';
         text-align: center;
         color: $color3;
-        text-shadow: 2px 4px 3px $color2;
+        text-shadow: 2px 4px 3px $color13;
         -webkit-text-stroke: 1px $color2;
     }
     
     p{
-        color: $color3;
+        color: $color2;
         text-shadow: 2px 6px 4px $color2;
         -webkit-text-stroke: 1px $color2;
+        font-family: roboto;
     }
     
-    .catalogo h2 {
+    & h2 {
         color: $color1;
         text-shadow: 2px 6px 6px $color2;
         -webkit-text-stroke: 1px $color2;
     }
     
     
-    .catalogo-item .button-btn {
+    &-item .button-btn {
         text-decoration: none;
         
         background: $color3;
         width: 100%;
-        box-shadow: 2px 7px 3px  $color6;
+        box-shadow: 2px 7px 3px  $color13;
         border-style: 8px double;
         display: block;
         width: 30%;
@@ -134,7 +160,7 @@ main {
         border-radius: 10px;
         border: 1px solid $color4;
     }
-    .catalogo-item button-btn {
+    &-item button-btn {
         display: grid;
         margin: auto;
     }
@@ -165,7 +191,8 @@ main {
     }
     
     
-    .catalogo-item  .purina {
+    &-item  .purina {
         width: 150px;
         
     }
+}

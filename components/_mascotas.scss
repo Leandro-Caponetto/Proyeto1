@@ -1,0 +1,50 @@
+
+/* principal  MASCOTAS*/
+
+
+main {
+    padding-top: 12%;
+}
+
+.id-eventos {
+   
+    width: 100%;
+    height: 150px; 
+    color: $color1;  
+    text-shadow: 2px 2px 10px $color2;
+    -webkit-text-stroke: 2px $color2;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fotos {
+    width: 100%;
+    height: 150px; 
+    color: $color1;  
+    text-shadow: 4px 2px 10px $color2;
+    -webkit-text-stroke: 2px $color2;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.gllery__img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+.gllery__img img {
+    width: 100%;
+}
+
+.gallery__imagen:hover {
+    transform: scale(1.2);
+}

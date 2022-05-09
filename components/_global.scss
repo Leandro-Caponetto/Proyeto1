@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Modak', cursive;
+    
+}
+body {
+    background-color: #f1f1f1;
+    max-width: 1200px;
+    margin: 40px auto;
+    
+    
+
+}
+.color {
+    border-radius: 50px;
+    border: 1px solid $color15;
+    background: $color16;
+    box-shadow: 20px 20px 60px $color17, -20px -20px 60px $color1;
+}
+
+@each $heading in (h2, h4) {
+    #{$heading}{
+        text-transform: uppercase;
+    }
+}
+
+$tarjetas:(
+    mas1: $color7,
+    mas2: $color10,
+    mas3: $color18,
+);
+@each $name, $color in $tarjetas  {
+    .#{$name} {
+        background-color: $color ;
+        margin: 0 5px;
+        padding: 10px;
+        color: $color;
+        border-radius: 20px;
+    }
+
+}
+

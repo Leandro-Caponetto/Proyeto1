@@ -15,10 +15,40 @@
         margin: auto;
     }
 
-    .principal .principal__btn {
+    .principal__btn {
+        
         grid-template-columns:  1fr;
-        grid-template-rows: 30px 30px; 
-        margin: 50px auto;
+        grid-template-rows: 300px 300px ; 
+        margin:  auto;
+        
+    }
+    .principal__text .publi {
+        display: none
+    }
+    .principal .principal__text .titulo {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .principal .principal__text h1 {
+        display: flex;
+        margin-top: 10px;
+        color: $color1;
+        font-size: 35px;
+        text-shadow:  2px 12px 4px $color5;
+        -webkit-text-stroke: 2px $color2;
+        
+    }   
+    
+    .principal .principal__text h2{
+        display: flex;
+        color: $color3;
+        margin-top: 10px;
+       
+        text-shadow: 2px 12px 4px $color5;
+        font-size: 25px;
+        -webkit-text-stroke: 1px $color2;
+        
     }
 
     .principal__pagos {
@@ -32,12 +62,7 @@
     .catalogo-item button {
         width: 50%;
     }
-    .search-box {
-        position: absolute;
-        top: 130%;
-        left: 400%;
-    }
-}
+}    
 
 
 @media screen and (max-width: 600px) {
@@ -63,9 +88,11 @@
     header label .header__icono {
         display: block;
     }
-     
-        
     
+
+  
+     
+   
     
     .catalogo {
         grid-template-columns: 1fr;
@@ -120,10 +147,7 @@
         display: none;
     }
 
-    .search-box {
-        display: none;
     
-    }
     .whatsapp {
         right: 20px;
     }

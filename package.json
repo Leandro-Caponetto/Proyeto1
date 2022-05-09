@@ -1,7 +1,6 @@
 {
   "name": "proyecto-coder",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "sass style.scss ./css/style.css -w --no-source-map -s compressed"
@@ -15,5 +14,6 @@
   "bugs": {
     "url": "https://github.com/Leandro-Caponetto/Proyeto1/issues"
   },
-  "homepage": "https://github.com/Leandro-Caponetto/Proyeto1#readme"
+  "homepage": "https://github.com/Leandro-Caponetto/Proyeto1#readme",
+  "description": ""
 }
