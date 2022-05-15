@@ -8,8 +8,8 @@
 }
 body {
     background-color: #f1f1f1;
-    max-width: 1200px;
-    margin: 40px auto;
+   
+    margin: 40px 40px;
     
     
 
@@ -21,7 +21,7 @@ body {
     box-shadow: 20px 20px 60px $color17, -20px -20px 60px $color1;
 }
 
-@each $heading in (h2, h4) {
+@each $heading in (h2, h4, p, h3) {
     #{$heading}{
         text-transform: uppercase;
     }

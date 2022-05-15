@@ -145,66 +145,87 @@ button {
     font-size: 20px;
     cursor: pointer;
     border-radius: 10px;
-}
-
-
-
-.contactos-text h4 {
-    font-size: 20px;
-    margin: 16px ;
-    box-shadow: 0px 0px 5px 1px $color6;
-}
-
-textarea {
-    margin: 10px;
-    width: 50%;
-    border: 2px $color3 solid;
-    outline: none;
-    resize: none;
-}
-
-textarea {
-    margin: 5px;
-    width: 50%;
-    border: 2px $color3 solid;
-    outline: none;
-    resize: none;
-    font-style: italic;
-    color: $color3;
-    -webkit-text-stroke: 1px $color2;
     
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
 }
+
+
+
+
 
 .contactos-text {
     margin: 50px;
+    padding: 10px 20px;
     width: auto;
     height: auto;
     border: 1px solid $color3;
     border-radius: 10px;
     font-size: 16px;
     text-align: center;
+    &:hover {
+        -box-shadow: 0px 0px 10px 1px $color6;
+        border: 1px solid $color4;
+    }
+    
+    &:focus {
+        -box-shadow: 0px 0px 5px 1px $color6;
+    }
+
+        
+    textarea {
+        display: flexbox;
+        width: 100%;
+        border: 2px $color3 solid;
+        outline: none;
+        resize: none;
+        font-style: italic;
+        color: $color3;
+        -webkit-text-stroke: 1px $color2;
+        
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+        
+    }
+    
+ 
+        
+    & h4 {
+        font-size: 20px;
+        margin: 16px ;
+        box-shadow: 0px 0px 5px 1px $color6;
+    }
+    & .btn {
+        font-family: 'roboto';
+        background-color: $color22;
+        box-shadow: $color23 4px 4px 0px;
+        border-radius: 8px;
+        transition: trasform 200ms, bx-shadow 200ms;
+        border: 1px solid $color1;
+        margin: 10px 10px;
+            
+    
+        &:hover {
+            transform: translateY(4px) translateX(4px);
+            box-shadow: $color23 0px 0px 0px;
+        }
+    }
+
 }
 
-.contactos-text:hover {
-    -box-shadow: 0px 0px 10px 1px $color6;
-    border: 1px solid $color4;
-}
 
-.contactos-text:focus {
-    -box-shadow: 0px 0px 5px 1px $color6;
-}
-
-textarea::-webkit-scrollbar {
-    width: 3px;
-}
-
- button:hover {
-    transform: scale(1.1);
-}
-
-.cont {
+.ubicacion a{
     text-decoration: none;
-    color: $color3;
-    font-size: 25px;
+
+    .cont  {
+        text-decoration: none;
+        color: $color3;
+        font-size: 25px;
+    }
+    
 }
 

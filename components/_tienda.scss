@@ -1,18 +1,16 @@
 
 /* servicios TIENDAS */
 
-main {
-    padding-top: 12%;
-}
-
 
 .display-1 {
     text-align: center;
     font-family: roboto;
     color: $color10;
     font-size: 25px;
-    text-shadow: 2px 8px 4px $color2;
+    text-shadow: 2px 4px 6px $color18 ;
 }
+
+
 .card-body {
     text-align: center;
 
@@ -23,20 +21,30 @@ main {
     
 }
 .d-none {
+    border-radius: 50px;
     text-align: center;
     & p {
         font-family: roboto;
+        
     }
+    & .span {
+        font-family: robto;
+        color: $color7;
+        text-shadow: 2px 4px 6px $color18;
+        
+    }
+    
 
 }
+
 
 .id-eventos {
     
     width: 100%;
     height: 150px; 
     color: $color1;  
-    text-shadow: 2px 8px 4px $color2;
-    -webkit-text-stroke: 2px $color2;
+    text-shadow: 2px 8px 4px $color9;
+    -webkit-text-stroke: 2px $color9;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -68,7 +76,7 @@ main {
     gap: 10px;
     
 
-    &__s {
+    &{
         font-family: Arial, Helvetica, sans-serif;
         color: $color10;
         display: flex;
@@ -103,6 +111,14 @@ main {
         -webkit-text-stroke: 1px $color2;
         padding: 10px;
         margin: 20px 20px;
+
+        & p{
+            color: $color2;
+            text-shadow: 2px 6px 4px $color13;
+            -webkit-text-stroke: 1px $color2;
+            font-family: roboto;
+        }
+        
     }
     
     
@@ -127,12 +143,6 @@ main {
         -webkit-text-stroke: 1px $color2;
     }
     
-    p{
-        color: $color2;
-        text-shadow: 2px 6px 4px $color2;
-        -webkit-text-stroke: 1px $color2;
-        font-family: roboto;
-    }
     
     & h2 {
         color: $color1;
@@ -160,9 +170,14 @@ main {
         border-radius: 10px;
         border: 1px solid $color4;
     }
-    &-item button-btn {
+    &-item .button-btn {
         display: grid;
         margin: auto;
+
+        &:hover {
+            animation: pulsate 1s ease-in-out;
+            transform: scale(1.2);
+        }
     }
     .button {
         display: inline-block;
@@ -175,10 +190,7 @@ main {
     }
     
     
-    .button-btn:hover {
-        animation: pulsate 1s ease-in-out;
-        transform: scale(1.2);
-    }
+    
     @keyframes pulsate {
         0% {
             box-shadow: 0 0 25px $color8, 0 0 50px;

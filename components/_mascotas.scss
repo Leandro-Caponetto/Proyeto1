@@ -34,17 +34,49 @@ main {
     font-size: 40px;
     margin-bottom: 30px;
 }
-
-.gllery__img {
+.gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 5px;
     padding: 10px;
-}
-.gllery__img img {
-    width: 100%;
+   
 }
 
-.gallery__imagen:hover {
-    transform: scale(1.2);
+.gllery__img {
+    
+    width: 150px;
+    height: 200px;
+    background-color: $color21;
+    border-radius: 10px;
+    outline: 1px solid $color19;
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px $color20;
+    box-shadow: 0 20px  30px $color12;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+
+    
+    & .gallery__imagen {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+        transition: transform .75s;
+        
+
+
+       
+    }
+    &:hover .gallery__imagen {
+        transform: scale(1.15);
+        
+    }
+    
+    
 }
+    
+
+
