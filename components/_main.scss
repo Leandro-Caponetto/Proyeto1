@@ -151,7 +151,8 @@
 .whatsapp {
     width: 50px;
     position: fixed;
-    top: 60px;
+    z-index: 1;
+    bottom: 0;
     right: 50px;
 }
 
