@@ -8,8 +8,22 @@
 }
 body {
     background-color: $color1;
-    margin: 40px 40px;
+    margin: 0 20px;
 
+}
+
+.whatsapp {
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 250px;
+}
+
+
+main {
+    background: linear-gradient(to right, $color25, $color26), url(../assets/hueso.png);
+    
 }
 .color {
     border-radius: 50px;

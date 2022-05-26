@@ -76,27 +76,35 @@
     .nav {
         display: none;
     }
-    .nav__menu {
-        display: none;
+    .nav__cont {
+        position: relative;
+        left: 45px;
     }
+   
     .nav-nav .header__icono {
         display: block;
         font-size: 32px;
         
     }
-    .nav__cont {
-        position: relative;
-        text-align: center;
-
-    }
+   
     header label .header__icono {
         display: block;
     }
-    
-
-  
+    .nav__cont {
+        position: relative;
+        left: 85px;
+    }
      
-   
+    .display-1 {
+        text-align: center;
+        color: $color7;
+        -webkit-text-stroke: 2px $color2;
+        font-size: 45px;
+        text-shadow: 2px 4px 6px $color5 ;
+
+
+      
+    }
     
     .catalogo {
         grid-template-columns: 1fr;
@@ -117,6 +125,12 @@
         margin-left: 35%;
         
 
+    }
+    .catalogo-item .oferta {
+        width: 70px;
+        height: 30px;
+        bottom: 89%;
+        left: 86%;
     }
     .fotos {
         color: $color3;
@@ -147,9 +161,7 @@
     }
 
     
-    .whatsapp {
-        right: 20px;
-    }
+    
 
 
     .conteiner__tre .mapa  {
@@ -167,7 +179,14 @@
     }
     
     
-
     
+    .whatsapp {
+        width: 50px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        right: 100px;
+    }
+        
 
 }

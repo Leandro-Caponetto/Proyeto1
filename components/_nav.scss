@@ -7,24 +7,37 @@
 
 
 .container-fluid {
-    
+    display: flex;
     width: 100%;
     box-shadow: 1px 20px 20px $color5;
     border-radius: 15px;
     -webkit-text-stroke: .9px $color2;
     border: 1px $color4 solid;
     padding: 3px 4px;
+    text-align: center;
+    z-index: 1;
     
+        
+    
+    & .logo1 {
+        border-radius: 50%;
+        box-shadow:2px 2px 8px $color2;
+        
+    }
+
+
 
 
     .navbar-toggler {
-        text-align: center;
+        position: relative;
+        left: 50px;
         width: 15%;
         height: 20%;
     
     }
     .collapse {
         justify-content: center;
+        z-index: 1;
         
         
         & .navbar-nav .nav-item .nav-link {
@@ -63,22 +76,29 @@
     .nav-nav .header__icono {
         display: none;
     }
-
-    .nav__cont .nav__pet {
-        color: $color1;
-        text-shadow: 1px 6px 4px $color2;
-        -webkit-text-stroke: 1px $color2;
-    }
-    .nav__cont .nav__boys {
-        color: $color3;
-        text-shadow: 1px 6px 2px $color2;
-        -webkit-text-stroke: 1px $color2;
+    .nav__cont {
         text-align: center;
-        margin-bottom: 0;
+
+        & .nav__pet {
+            display: flex;
+            color: $color1;
+            text-shadow: 1px 6px 4px $color2;
+            -webkit-text-stroke: 1px $color2;
+            
+        }
+        & .nav__boys {
+            color: $color3;
+            text-shadow: 1px 6px 2px $color2;
+            -webkit-text-stroke: 1px $color2;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        & p {
+            margin: 0;
+            text-align: center;
+        }
     }
-    .nav__cont p {
-        margin: 0;
-    }
+    
         
     
 
